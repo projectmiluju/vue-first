@@ -2,10 +2,11 @@
 import { ref } from 'vue';
 
 const title = ref('상품목록..');
-const products = ref(['애플', '아이폰', '아이페드', '에어팟']);
+const products = ref(['애플', '아이폰', '아이페드', '에어팟', '맥북']);
 const copyright = ref('Copyright 2024 Vue.js');
 const imgSrc = 'https://w7.pngwing.com/pngs/854/555/png-transparent-vue-js-hd-logo-thumbnail.png'
-const imgWidth = 500;
+const imgWidth = 50;
+
 </script>
 
 <template>
@@ -15,10 +16,7 @@ const imgWidth = 500;
 <img :src="imgSrc" :width="imgWidth">
 <h3>{{ title }}</h3>
 <ul>
-  <li>{{ products[0] }}</li>
-  <li>{{ products[1] }}</li>
-  <li>{{ products[2] }}</li>
-  <li>{{ products[3] }}</li>
+  <li v-for="product in products">{{ product }}</li>
 </ul>
 <h3>{{ copyright }}</h3>
 
