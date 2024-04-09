@@ -11,7 +11,7 @@ function buttonClicked() {
   alert('hi button clicked..');
 }
 function greetButtonClicked() {
-  console.log('hi');
+  console.log(copyright.value);
 }
 </script>
 
