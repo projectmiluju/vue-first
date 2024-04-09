@@ -7,6 +7,9 @@ const copyright = ref('Copyright 2024 Vue.js');
 const imgSrc = 'https://w7.pngwing.com/pngs/854/555/png-transparent-vue-js-hd-logo-thumbnail.png'
 const imgWidth = 50;
 
+function buttonClicked() {
+  alert('hi button clicked..');
+}
 </script>
 
 <template>
@@ -14,6 +17,7 @@ const imgWidth = 50;
 <h1>Hi Vue</h1>
 <hr>
 <img :src="imgSrc" :width="imgWidth">
+<button @click="buttonClicked">Click!</button>
 <h3>{{ title }}</h3>
 <ul>
   <li v-for="product in products">{{ product }}</li>
