@@ -1,23 +1,30 @@
 <script setup>
+const title = '상품목록..';
+const products = ['애플', '아이폰', '아이페드', '에어팟'];
+const copyright = 'Copyright 2024 Vue.js';
 </script>
 
 <template>
 
 <h1>Hi Vue</h1>
 <hr>
-<h3>상품목록</h3>
+<h3>{{ title }}</h3>
 <ul>
-  <li>애플</li>
-  <li>아이폰</li>
-  <li>아이패드</li>
-  <li>맥북</li>
+  <li>{{ products[0] }}</li>
+  <li>{{ products[1] }}</li>
+  <li>{{ products[2] }}</li>
+  <li>{{ products[3] }}</li>
 </ul>
-<h3>Copyright 2024 Vue.js</h3>
+
+<h3>{{ copyright }}</h3>
 
 </template>
 
 <style scoped>
 h1 {
   color: brown;
+}
+h3 {
+  color: rebeccapurple;
 }
 </style>
