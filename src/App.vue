@@ -41,6 +41,9 @@ const copyright = ref('Copyright 2024 Vue.js');
 const imgSrc = 'https://w7.pngwing.com/pngs/854/555/png-transparent-vue-js-hd-logo-thumbnail.png'
 const imgWidth = 50;
 
+const typedText = ref('sdf');
+const checkboxChecked = ref(true);
+
 function buttonClicked() {
   alert('hi button clicked..');
 }
@@ -55,7 +58,10 @@ function greetButtonClicked() {
 <hr>
 <img :src="imgSrc" :width="imgWidth">
 <button @click="buttonClicked">Click!</button>
-<button @click="greetButtonClicked">누르면 콘솔로 인사를 합니다.</button>
+<button @click="greetButtonClicked">누르면 콘솔로 인사를 합니다.</button><br><br>
+양방향 테스트 : <input type="text" v-model="typedText"><br>
+체크박스 : <input type="checkbox" v-model="checkboxChecked"><br>
+{{ typedText }}
 <h3>{{ title }}</h3>
 <ul>
   <li v-for="product in products" :key="product.productId">
