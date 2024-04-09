@@ -1,7 +1,9 @@
 <script setup>
-const title = '상품목록..';
-const products = ['애플', '아이폰', '아이페드', '에어팟'];
-const copyright = 'Copyright 2024 Vue.js';
+import { ref } from 'vue';
+
+const title = ref('상품목록..');
+const products = ref(['애플', '아이폰', '아이페드', '에어팟']);
+const copyright = ref('Copyright 2024 Vue.js');
 </script>
 
 <template>
@@ -15,7 +17,6 @@ const copyright = 'Copyright 2024 Vue.js';
   <li>{{ products[2] }}</li>
   <li>{{ products[3] }}</li>
 </ul>
-
 <h3>{{ copyright }}</h3>
 
 </template>
