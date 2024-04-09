@@ -10,6 +10,9 @@ const imgWidth = 50;
 function buttonClicked() {
   alert('hi button clicked..');
 }
+function greetButtonClicked() {
+  console.log('hi');
+}
 </script>
 
 <template>
@@ -18,6 +21,7 @@ function buttonClicked() {
 <hr>
 <img :src="imgSrc" :width="imgWidth">
 <button @click="buttonClicked">Click!</button>
+<button @click="greetButtonClicked">누르면 콘솔로 인사를 합니다.</button>
 <h3>{{ title }}</h3>
 <ul>
   <li v-for="product in products">{{ product }}</li>
